@@ -109,7 +109,7 @@ main{
     justify-content: center;
 }
 .main--blood-cartoon{
-    max-width: 80%;
+    max-width: 70%;
 }
 .main--blood-cartoon-credit{
     font-size: clamp(.5rem, 2vw + 1rem, .75rem);
@@ -186,7 +186,7 @@ main{
 .during--tip,
 .after--tip{
     padding: 20px;
-    border: 1px solid var(--text-color-dark);
+    border: .5px solid rgba(209, 40, 40, .5);
     border-radius: 5px;
 }
 .before--tips div h1, 
@@ -211,7 +211,7 @@ main{
     border-radius: 5px;
     border: none;
     border: 1px solid transparent;
-    background-color: transparent;
+    background-color: rgb(255, 240, 240);
     border: 1px solid rgb(255, 105, 105);
     color: rgb(255, 105, 105);
 }
@@ -219,11 +219,8 @@ main{
 .during--tips div button:hover,
 .after--tips div button:hover{
     color: var(--text-color-dark);
-}
-.before--tips div button:hover,
-.during--tips div button:hover,
-.after--tips div button:hover{
-    border: 1px solid var(--text-color-dark);
+    border: 1px solid transparent;
+    background-color: rgb(255, 222, 222);
 }
 .before--more-tips-title-hover,
 .during--more-tips-title-hover,
@@ -258,7 +255,7 @@ main{
 .during--more-tips div:hover,
 .after--more-tips div:hover{
     border-radius: 5px;
-    border: 1px solid var(--text-color-dark);
+    border: 1px solid rgba(209, 40, 40, .5);
     transition: all .2s ease;
 }
 .before--more-tips h1,
