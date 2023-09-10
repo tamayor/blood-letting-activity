@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    transition: all .3s ease;
+    scroll-behavior: smooth;
+}
+:root{
+    font-size: 15px;
+    --text-color: rgb(255, 91, 91);
+    --text-color-dark: rgb(209, 40, 40);
+
+}
+body{
+    background-color: white;
+}
+a{
+    color: var(--text-color);
+}
+.a-hover{
+    color: rgb(141, 0, 0);
+}
+.red-cross-logo{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 228, 228);
+    width: 100vw;
+    height: 50px;
+    padding: 20px;
+    z-index: 1;
+}
+.header-up{
+    transform: translateY(-50px);
+}
+header a{
+    margin-right: 10px;
+}
+main{
+    max-width: 100vw;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px 5%;
+}
+.main--div-1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    min-width: 50%;
+    max-width: max-content;
+}
+.main--div-1 h4, .main--div-1 h1,.main--div-1 span{
+    color: var(--text-color);
+}
+.main--div-1 h4{
+    width: max-content;
+    font-size: clamp(.5rem, 2vw + .5rem,1rem);
+}
+.main--div-1 h1{
+    width: max-content;
+    font-size: clamp(1rem, 2vw + 1rem, 5rem);
+}
+.main--div-1 span, .main--div-1 a{
+    font-size: clamp(.5rem, 2vw + 1rem, .75rem);
+}
+.main--b-d-a-container{
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    z-index: 1;
+    padding: 10px;
+    top: 50px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    min-height: 10px;
+}
+.main--b-d-a-container-up{
+    position: sticky;
+    top: 0;
+}
+.main--b-d-a{
+    background-color: transparent;
+    min-height: max-content;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid transparent;
+}
+.main--b-d-a:hover{
+    border: 1px solid rgb(255, 105, 105);
+}
+.main--div-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main--blood-cartoon{
+    max-width: 80%;
+}
+.main--blood-cartoon-credit{
+    font-size: clamp(.5rem, 2vw + 1rem, .75rem);
+    color:var(--text-color);
+}
+@media (max-width: 860px) {
+    main{
+        max-width: 100vw;
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .8fr 1.8fr;
+        padding: 20px 2%;
+    }
+    .main--div-1{
+        min-width: 100%;
+    }
+    .main--blood-cartoon{
+        max-width: 45%;
+    }
+   
+}
+@media (max-width:580px) {
+    .main--blood-cartoon{
+        max-width: 80%;
+    }
+}
+
+/*section before*/
+.before, 
+.during,
+.after{
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.before--title, 
+.during--title,
+.after--title{
+    margin-top: 20px;
+    font-size: clamp(2rem, 2vw + 1rem, 10rem);
+    text-align: center;
+}
+.before--tips, 
+.during--tips,
+.after--tips{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    min-height: 40%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px;
+}
+.before--tips div, 
+.during--tips div,
+.after--tips div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.before--tips-icons, 
+.during--tips-icons,
+.after--tips-icons{
+    width: 40%;
+}
+.before--tip, 
+.during--tip,
+.after--tip{
+    padding: 20px;
+    border: 1px solid var(--text-color-dark);
+    border-radius: 5px;
+}
+.before--tips div h1, 
+.during--tips div h1,
+.after--tips div h1{
+    font-size: clamp(.5rem, 2vw + 1rem, 1.5rem);
+    color: var(--text-color-dark);
+}
+.before--tips div p, 
+.during--tips div p,
+.after--tips div p{
+    color: var(--text-color);
+    font-size: clamp(.5rem, 2vw + 1rem, 1rem);
+    min-height: 100px;
+}
+.before--tips div button, 
+.during--tips div button,
+.after--tips div button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border: 1px solid rgb(255, 105, 105);
+}
+.before--tips div button:hover a,
+.during--tips div button:hover a,
+.after--tips div button:hover a{
+    color: var(--text-color-dark);
+}
+.before--tips div button:hover,
+.during--tips div button:hover,
+.after--tips div button:hover{
+    border: 1px solid var(--text-color-dark);
+}
+.before--more-tips-title-hover,
+.during--more-tips-title-hover,
+.after--more-tips-title-hover{
+    color: var(--text-color-dark);
+}
+.before--more-tips-title,
+.during--more-tips-title,
+.after--more-tips-title{
+    text-align: center;
+    font-size: clamp(.5rem, 2vw + 1rem, 1.2rem);
+    margin: 10px 0;
+}
+.before--more-tips,
+.during--more-tips,
+.after--more-tips{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 30px;
+}
+.before--more-tips div,
+.during--more-tips div,
+.after--more-tips div{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: all .1s ease;
+}
+.before--more-tips div:hover,
+.during--more-tips div:hover,
+.after--more-tips div:hover{
+    border-radius: 5px;
+    border: 1px solid var(--text-color-dark);
+    transition: all .2s ease;
+}
+.before--more-tips h1,
+.during--more-tips h1,
+.after--more-tips h1{
+    color: var(--text-color-dark);
+    font-size: clamp(.5rem, 2vw + 1rem, 1rem);
+}
+.before--more-tips p,
+.during--more-tips p,
+.after--more-tips p{
+    color: var(--text-color);
+    font-size: clamp(.2rem, 2vw + 1rem, .8rem);
+}
+@media (max-width: 680px) {
+    .before--tips,
+    .during--tips,
+    .after--tips{
+        display: flex;
+        flex-direction: column;
+        min-height: 50%;
+        max-width: 100%;
+        align-items: start;
+        justify-content: center; 
+    }
+    .before--tip,
+    .during--tip,
+    .after--tip{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .before--tip div,
+    .during--tip div,
+    .after--tip div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 2fr;
+        min-height: fit-content;
+    }
+    .before--tips-icons,
+    .during--tips-icons,
+    .after--tips-icons{
+        grid-row: 1/3;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .before--tip h1,
+    .during--tip h1,
+    .after--tip h1{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: grid;
+        align-items: end;
+        justify-content: left;
+    }
+    .before--tip p,
+    .during--tip p,
+    .after--tip p{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: grid;
+        align-items: left;
+        justify-content: left;
+    }
+    .before--tip button,
+    .during--tip button,
+    .after--tip button{
+        margin: auto;
+        width: 100%;
+    }
+}
