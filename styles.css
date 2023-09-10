@@ -115,6 +115,9 @@ main{
     font-size: clamp(.5rem, 2vw + 1rem, .75rem);
     color:var(--text-color);
 }
+.developed-name{
+    text-align: center; font-size: .8rem; padding: 0 0 20px; font-weight: 200;
+}
 @media (max-width: 860px) {
     main{
         max-width: 100vw;
@@ -270,6 +273,7 @@ main{
     color: var(--text-color);
     font-size: clamp(.2rem, 2vw + 1rem, .8rem);
 }
+
 @media (max-width: 680px) {
     .before--tips,
     .during--tips,
