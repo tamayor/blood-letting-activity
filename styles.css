@@ -202,16 +202,19 @@ main{
 .before--tips div button, 
 .during--tips div button,
 .after--tips div button{
+    width: 100% ;
+    cursor: pointer;
     padding: 10px;
     border-radius: 5px;
     border: none;
     border: 1px solid transparent;
     background-color: transparent;
     border: 1px solid rgb(255, 105, 105);
+    color: rgb(255, 105, 105);
 }
-.before--tips div button:hover a,
-.during--tips div button:hover a,
-.after--tips div button:hover a{
+.before--tips div button:hover,
+.during--tips div button:hover,
+.after--tips div button:hover{
     color: var(--text-color-dark);
 }
 .before--tips div button:hover,
