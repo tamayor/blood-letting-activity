@@ -1,6 +1,6 @@
 The first time I donated blood, I felt a sense of curiosity about the experience. 
 It's quite a unique feeling, knowing that your blood is leaving your body. 
-While the registered medical technologist (RMT) was drawing my blood, 
+While the Registered massage therapist (RMT) was drawing my blood, 
 I found myself contemplating the idea of creating a website.
 I'm currently studying how to design very simple fucking websites, so I thought, 
 "What if I create a website dedicated to sharing valuable information about what to do before, during, and after the donation process?"
