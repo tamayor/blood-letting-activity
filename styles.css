@@ -10,12 +10,14 @@
 }
 :root{
     font-size: 15px;
-    --text-color: rgb(255, 91, 91);
-    --text-color-dark: rgb(209, 40, 40);
-
+    --text-color: rgb(255, 163, 163);
+    --text-color-dark: rgb(151, 0, 0);
 }
 body{
     background-color: white;
+}
+hr{
+    margin: 0 0 120px;
 }
 a{
     color: var(--text-color);
@@ -24,9 +26,12 @@ a{
     color: rgb(141, 0, 0);
 }
 .red-cross-logo{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     object-fit: cover;
+    padding: 5px;
+    border-radius: 5px;
+    filter: brightness(80%);
 }
 header{
     position: fixed;
@@ -39,6 +44,7 @@ header{
     padding: 20px;
     z-index: 1;
 }
+
 .header-up{
     transform: translateY(-50px);
 }
@@ -75,7 +81,7 @@ main{
     font-size: clamp(.5rem, 2vw + 1rem, .75rem);
 }
 .main--b-d-a-container{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: sticky;
     z-index: 1;
     padding: 10px;
@@ -88,8 +94,7 @@ main{
     min-height: 10px;
 }
 .main--b-d-a-container-up{
-    position: sticky;
-    top: 0;
+    transform: translateY(-50px);
 }
 .main--b-d-a{
     background-color: transparent;
@@ -145,7 +150,7 @@ main{
 .before, 
 .during,
 .after{
-    padding: 20px;
+    padding:  0 20px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -154,8 +159,7 @@ main{
 .before--title, 
 .during--title,
 .after--title{
-    margin-top: 20px;
-    font-size: clamp(2rem, 2vw + 1rem, 10rem);
+    font-size: clamp(1.5rem, 2vw + 1rem, 10rem);
     text-align: center;
 }
 .before--tips, 
@@ -189,18 +193,18 @@ main{
     border: .5px solid rgba(209, 40, 40, .5);
     border-radius: 5px;
 }
-.before--tips div h1, 
-.during--tips div h1,
-.after--tips div h1{
+.before--tips div h2, 
+.during--tips div h2,
+.after--tips div h2{
     font-size: clamp(.5rem, 2vw + 1rem, 1.5rem);
     color: var(--text-color-dark);
+    max-width: 100%;
 }
 .before--tips div p, 
 .during--tips div p,
 .after--tips div p{
     color: var(--text-color);
     font-size: clamp(.5rem, 2vw + 1rem, 1rem);
-    min-height: 100px;
 }
 .before--tips div button, 
 .during--tips div button,
@@ -211,16 +215,17 @@ main{
     border-radius: 5px;
     border: none;
     border: 1px solid transparent;
-    background-color: rgb(255, 240, 240);
-    border: 1px solid rgb(255, 105, 105);
-    color: rgb(255, 105, 105);
+    background-color: rgb(242, 242, 242);
+    border: 1px solid rgb(206, 206, 206);
+    color: rgb(162, 125, 125);
 }
 .before--tips div button:hover,
 .during--tips div button:hover,
 .after--tips div button:hover{
     color: var(--text-color-dark);
-    border: 1px solid transparent;
-    background-color: rgb(255, 222, 222);
+    border: 1px solid rgb(255, 105, 105);
+    background-color: rgb(255, 243, 243);
+    color: rgb(255, 68, 68);
 }
 .before--more-tips-title-hover,
 .during--more-tips-title-hover,
@@ -258,16 +263,16 @@ main{
     border: 1px solid rgba(209, 40, 40, .5);
     transition: all .2s ease;
 }
-.before--more-tips h1,
-.during--more-tips h1,
-.after--more-tips h1{
+.before--more-tips h4,
+.during--more-tips h4,
+.after--more-tips h4{
     color: var(--text-color-dark);
     font-size: clamp(.5rem, 2vw + 1rem, 1rem);
 }
 .before--more-tips p,
 .during--more-tips p,
 .after--more-tips p{
-    color: var(--text-color);
+    color: var(--text-color);/*----------------------------------------------------*/
     font-size: clamp(.2rem, 2vw + 1rem, .8rem);
 }
 
@@ -306,9 +311,9 @@ main{
         align-items: center;
         justify-content: center;
     }
-    .before--tip h1,
-    .during--tip h1,
-    .after--tip h1{
+    .before--tip h2,
+    .during--tip h2,
+    .after--tip h2{
         grid-column: 2/4;
         grid-row: 1/2;
         display: grid;
@@ -331,3 +336,21 @@ main{
         width: 100%;
     }
 }
+
+
+/*
+.dark-mode-header{
+    background-color: rgb(12, 0, 0);
+}
+.dark-mode-red-cross-logo{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 5px;
+    filter: brightness(150%);
+}
+.dark-mode-main--b-d-a-container{
+    background-color: rgb(33, 0, 0);
+}
+*/
